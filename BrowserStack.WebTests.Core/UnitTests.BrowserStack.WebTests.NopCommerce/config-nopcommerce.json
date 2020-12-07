@@ -1,0 +1,13 @@
+{
+  "site": {
+    "BaseQAUrls": {
+      "BrowserStack.WebTests.NopCommerce": "https://www.nopcommerce.com/en/demo",
+      "RegisterURL": "https://www.nopcommerce.com/en/register?returnUrl=%2Fen%2Fdemo"
+    },
+    "remoteSeleniumServerUrl": "https://poojachavan1:f9jzV6LHWZNCCQUeW3pY@hub-cloud.browserstack.com/wd/hub",
+    "acceptInsecureCertificates": true,
+    "browser": "Chrome",
+    "testDataFile": "qa-data.json",
+    "Environment": "OnPrem"
+  }
+}

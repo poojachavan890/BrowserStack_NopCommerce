@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.msedgedriver\87.0.669\build\Selenium.WebDriver.MSEdgeDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.msedgedriver\87.0.669\build\Selenium.WebDriver.MSEdgeDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.microsoftwebdriver\10.0.17134\build\Selenium.WebDriver.MicrosoftWebDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.microsoftwebdriver\10.0.17134\build\Selenium.WebDriver.MicrosoftWebDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.iedriver\3.150.1.2\build\Selenium.WebDriver.IEDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.iedriver\3.150.1.2\build\Selenium.WebDriver.IEDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.geckodriver\0.28.0\build\Selenium.WebDriver.GeckoDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.geckodriver\0.28.0\build\Selenium.WebDriver.GeckoDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.chromedriver\87.0.4280.2000\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.chromedriver\87.0.4280.2000\build\Selenium.WebDriver.ChromeDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('$(NuGetPackageRoot)netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+  </ImportGroup>
+</Project>

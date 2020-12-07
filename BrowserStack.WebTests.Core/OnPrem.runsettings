@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <!-- Configurations that affect the Test Framework -->
+  <RunConfiguration>
+    <MaxCpuCount>0</MaxCpuCount>   
+    <ResultsDirectory>.\TestResults</ResultsDirectory>
+    <TargetPlatform>x64</TargetPlatform>
+    <TestSessionTimeout>36000000</TestSessionTimeout>
+  </RunConfiguration>
+
+  <!-- Configurations for data collectors -->
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Configuration>
+          <CodeCoverage>
+            <ModulePaths>
+              <Exclude>
+                <ModulePath>.*CPPUnitTestFramework.*</ModulePath>
+              </Exclude>
+            </ModulePaths>
+
+            <!-- We recommend you do not change the following values: -->
+            <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <CollectAspDotNet>False</CollectAspDotNet>
+
+          </CodeCoverage>
+        </Configuration>
+      </DataCollector>
+
+      <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
+        <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
+      </DataCollector>
+
+    </DataCollectors>
+  </DataCollectionRunSettings>
+  //https://poojachavan1:f9jzV6LHWZNCCQUeW3pY@hub-cloud.browserstack.com/wd/hub
+  <!-- Parameters used by tests at runtime -->
+  <TestRunParameters>
+    <Parameter name="browser" value="Chrome" />
+    <Parameter name="baseQAUrl" value="https://www.nopcommerce.com/en/demo" />
+    <Parameter name="RegisterURL" value="https://www.nopcommerce.com/en/register?returnUrl=%2Fen%2Fdemo" />
+    <Parameter name="acceptInsecureCertificates" value="true" />
+    <Parameter name="remoteSeleniumServerUrl" value="https://poojachavan1:f9jzV6LHWZNCCQUeW3pY@hub-cloud.browserstack.com/wd/hub" />
+    <Parameter name="testDataFile" value="qa-data.json" />
+    <Parameter name="username" value="pmqasvc" />
+    <Parameter name="password" value="fPT&amp;!1oTV*y" />
+    <Parameter name="Environment" value="OnPrem" />
+    <Parameter name="SetUpFilePath" value="C:\\Automation\\SetupFiles\\" />
+  </TestRunParameters>
+  <!-- Adapter Specific sections -->
+
+
+
+</RunSettings>
